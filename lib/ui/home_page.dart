@@ -23,13 +23,13 @@ class HomePage extends StatelessWidget {
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
             TextField(
-              style: TextStyle(color: Colors.blueAccent),
+              style: const TextStyle(color: AppColors.textColor),
               controller: controller,
               decoration: const InputDecoration(
                 filled: true,
-                // fillColor: AppColors.TextFieldColor,
-                hintText: '',
-                hintStyle: TextStyle(color: Colors.white),
+                fillColor: AppColors.textFieldColor,
+                hintText: 'search',
+                hintStyle: TextStyle(color: AppColors.textColor),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.horizontal(),
                 ),
@@ -42,7 +42,10 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   context.read<MovieProvider>().getMovie(controller.text);
                 },
-                child: const Icon(Icons.search)),
+                child: const Icon(
+                  Icons.search,
+                  color: AppColors.textColor,
+                )),
             const SizedBox(
               height: 25,
             ),

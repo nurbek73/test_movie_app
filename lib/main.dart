@@ -18,8 +18,6 @@ class MyApp extends StatelessWidget {
         dio: DioSettings().dio,
       ),
       child: const MaterialApp(
-        title: 'MOVIESEARCHER',
-        color: Colors.white,
         home: HomePage(),
       ),
     );

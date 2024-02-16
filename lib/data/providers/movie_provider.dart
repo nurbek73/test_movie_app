@@ -19,7 +19,7 @@ class MovieProvider extends ChangeNotifier {
       print(
         e.toString(),
       );
-      notifyListeners();
     }
+    notifyListeners();
   }
 }

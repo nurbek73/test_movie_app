@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       create: (context) => MovieProvider(
         dio: DioSettings().dio,
       ),
-      child: const MaterialApp(
+      child: MaterialApp(
         home: HomePage(),
       ),
     );
